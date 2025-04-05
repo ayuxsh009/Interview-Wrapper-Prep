@@ -9,7 +9,6 @@ const LandingPage = () => {
       {/* Navigation Bar */}
       <nav className="flex items-center justify-between p-4 border-b border-gray-700">
         <div className="flex items-center space-x-2">
-          <Image src={"/logo.png"} alt="logo" width={40} height={40} />
           <span className="text-xl md:text-2xl font-bold text-white">Interview-Wrapper</span>
         </div>
         <div className="flex items-center space-x-2 md:space-x-4">

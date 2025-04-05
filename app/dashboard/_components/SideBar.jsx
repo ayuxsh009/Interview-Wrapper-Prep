@@ -30,15 +30,7 @@ function SideBar() {
         animate={{ opacity: 1, y: 0 }}
         className="flex gap-3 items-center p-2"
       >
-        <div className="p-2 bg-emerald-600/20 rounded-lg border border-emerald-500/30">
-          <Image 
-            src={"/logo.png"} 
-            alt="logo" 
-            width={32} 
-            height={32} 
-            className="filter brightness-125"
-          />
-        </div>
+        
         <h2 className="font-bold text-xl bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
           Interview-Wrapper
         </h2>

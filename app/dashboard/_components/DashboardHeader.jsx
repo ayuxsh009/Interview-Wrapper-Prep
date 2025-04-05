@@ -21,7 +21,7 @@ function DashboardHeader() {
       {/* Logo and Name - shown based on screen size and route */}
       {showLogoAndName && (
         <div className="flex items-center space-x-2">
-          <Image src={"/logo.png"} alt="logo" width={40} height={40} className="filter brightness-125" />
+          
           <Link href={"/dashboard"}>
             <span className="text-xl md:text-2xl font-bold text-emerald-400">Interview-Wrapper</span>
           </Link>
