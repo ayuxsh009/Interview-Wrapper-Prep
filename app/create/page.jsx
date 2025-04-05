@@ -67,7 +67,7 @@ function CreateCourse() {
           animate={{ y: 0 }}
           className="text-center mb-8 md:mb-12"
         >
-          <h2 className="font-bold text-3xl md:text-4xl bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="font-bold text-3xl md:text-4xl bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
             Build Your Personal Study Material
           </h2>
           <p className="text-gray-400 mt-3 text-base md:text-lg">
@@ -81,7 +81,7 @@ function CreateCourse() {
             <React.Fragment key={stepIndex}>
               <div 
                 className={`w-8 h-8 rounded-full flex items-center justify-center 
-                  ${step === stepIndex ? 'bg-blue-600 text-white' : 
+                  ${step === stepIndex ? 'bg-emerald-600 text-white' : 
                     step > stepIndex ? 'bg-green-600 text-white' : 'bg-gray-700 text-gray-400'}`}
               >
                 {stepIndex + 1}
@@ -122,7 +122,7 @@ function CreateCourse() {
             <motion.div whileHover={{ x: -2 }}>
               <Button 
                 variant="outline" 
-                className="border-blue-500 text-blue-400 hover:bg-blue-900/50 px-6 py-3 hover:text-blue-300"
+                className="border-emerald-500 text-emerald-400 hover:bg-emerald-900/50 px-6 py-3 hover:text-emerald-300"
                 onClick={() => setStep(0)}
                 disabled={loading}
               >
@@ -136,7 +136,7 @@ function CreateCourse() {
           {step === 0 ? (
             <motion.div whileHover={{ scale: 1.03 }}>
               <Button 
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 shadow-lg"
+                className="bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-8 py-3 shadow-lg"
                 onClick={() => setStep(1)}
                 disabled={!formData.courseType}
               >

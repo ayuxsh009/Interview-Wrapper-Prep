@@ -19,7 +19,7 @@ function TopicInput({ setTopic, setDifficultyLevel }) {
     >
       <motion.h2 
         whileHover={{ x: 2 }}
-        className="text-xl font-semibold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"
+        className="text-xl font-semibold mb-4 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent"
       >
         What topic would you like to study?
       </motion.h2>
@@ -27,7 +27,7 @@ function TopicInput({ setTopic, setDifficultyLevel }) {
       <motion.div whileHover={{ scale: 1.005 }}>
         <Textarea
           placeholder="Example: Explain React hooks like useState and useEffect..."
-          className="mt-2 min-h-[150px] bg-gray-800/50 text-white border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/30 transition-all"
+          className="mt-2 min-h-[150px] bg-gray-800/50 text-white border-gray-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/30 transition-all"
           onChange={(event) => setTopic(event.target.value)}
         />
       </motion.div>
@@ -43,7 +43,7 @@ function TopicInput({ setTopic, setDifficultyLevel }) {
       
       <Select onValueChange={(value) => setDifficultyLevel(value)}>
         <motion.div whileHover={{ y: -1 }}>
-          <SelectTrigger className="w-full bg-gray-800/50 text-white border-gray-600 hover:border-blue-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/30 transition-all">
+          <SelectTrigger className="w-full bg-gray-800/50 text-white border-gray-600 hover:border-emerald-400 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/30 transition-all">
             <SelectValue placeholder="Choose difficulty..." />
           </SelectTrigger>
         </motion.div>

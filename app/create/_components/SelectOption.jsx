@@ -7,7 +7,7 @@ function SelectOption({ selectedStudyType }) {
     {
       name: "DSA",
       icon: "/job.png",
-      color: "from-blue-500 to-blue-600"
+      color: "from-emerald-500 to-emerald-600"
     },
     {
       name: "Development",
@@ -33,7 +33,7 @@ function SelectOption({ selectedStudyType }) {
       <motion.h2 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-6 text-xl font-semibold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"
+        className="text-center mb-6 text-xl font-semibold bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent"
       >
         What type of preparation do you need?
       </motion.h2>

@@ -17,8 +17,8 @@ function WelcomeBanner() {
       className="p-6 bg-gradient-to-r from-gray-800 to-gray-900 w-full text-white rounded-xl border border-gray-700 flex items-center gap-6 shadow-lg overflow-hidden relative"
     >
       {/* Decorative elements */}
-      <div className="absolute -right-10 -top-10 w-32 h-32 bg-blue-600/10 rounded-full blur-xl"></div>
-      <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-blue-400/5 rounded-full blur-xl"></div>
+      <div className="absolute -right-10 -top-10 w-32 h-32 bg-emerald-600/10 rounded-full blur-xl"></div>
+      <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-emerald-400/5 rounded-full blur-xl"></div>
       
       {/* Image with subtle animation */}
       <motion.div
@@ -36,7 +36,7 @@ function WelcomeBanner() {
 
       {/* Content */}
       <div className="relative z-10">
-        <h2 className="font-bold text-2xl sm:text-3xl bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+        <h2 className="font-bold text-2xl sm:text-3xl bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
           Hello, {user?.fullName || "there"} 👋
         </h2>
         <p className="text-gray-300 mt-2 max-w-md">
@@ -45,7 +45,7 @@ function WelcomeBanner() {
         
         {/* Progress indicator (example) */}
         <div className="flex items-center gap-2 mt-4 text-sm text-gray-400">
-          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
           <span>All systems operational</span>
         </div>
       </div>

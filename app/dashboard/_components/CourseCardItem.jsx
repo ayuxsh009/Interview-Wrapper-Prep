@@ -13,7 +13,7 @@ function CourseCardItem({ course }) {
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
       className="border border-gray-700 rounded-xl shadow-lg p-6 bg-gray-800/80 hover:bg-gray-800 text-white backdrop-blur-sm 
-                 transition-all duration-300 hover:shadow-blue-900/20 hover:border-gray-600"
+                 transition-all duration-300 hover:shadow-emerald-900/20 hover:border-gray-600"
     >
       <div>
         <div className="flex justify-between items-start">
@@ -29,7 +29,7 @@ function CourseCardItem({ course }) {
           <span className={`text-xs font-medium px-3 py-1 rounded-full 
                            ${course?.status === "Generating" ? 
                              'bg-yellow-500/20 text-yellow-400' : 
-                             'bg-blue-500/20 text-blue-400'}`}>
+                             'bg-emerald-500/20 text-emerald-400'}`}>
             {course?.status}
           </span>
         </div>
@@ -49,7 +49,7 @@ function CourseCardItem({ course }) {
           <Progress 
             value={0} 
             className="h-2 bg-gray-700/50" 
-            indicatorClassName="bg-gradient-to-r from-blue-500 to-blue-600"
+            indicatorClassName="bg-gradient-to-r from-emerald-500 to-emerald-600"
           />
         </div>
 
@@ -71,8 +71,8 @@ function CourseCardItem({ course }) {
           ) : (
             <Link href={"/course/" + course?.courseId}>
               <Button 
-                className="bg-gradient-to-br from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 
-                          text-white px-5 py-2 rounded-lg shadow-md hover:shadow-blue-700/30 transition-all duration-300"
+                className="bg-gradient-to-br from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 
+                          text-white px-5 py-2 rounded-lg shadow-md hover:shadow-emerald-700/30 transition-all duration-300"
               >
                 View Course
               </Button>

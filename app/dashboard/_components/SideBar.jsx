@@ -30,7 +30,7 @@ function SideBar() {
         animate={{ opacity: 1, y: 0 }}
         className="flex gap-3 items-center p-2"
       >
-        <div className="p-2 bg-blue-600/20 rounded-lg border border-blue-500/30">
+        <div className="p-2 bg-emerald-600/20 rounded-lg border border-emerald-500/30">
           <Image 
             src={"/logo.png"} 
             alt="logo" 
@@ -39,7 +39,7 @@ function SideBar() {
             className="filter brightness-125"
           />
         </div>
-        <h2 className="font-bold text-xl bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+        <h2 className="font-bold text-xl bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
           Interview-Wrapper
         </h2>
       </motion.div>
@@ -53,7 +53,7 @@ function SideBar() {
           className="mb-8"
         >
           <Link href={"/create"} className="w-full">
-            <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-blue-700/30 transition-all">
+            <Button className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white shadow-lg hover:shadow-emerald-700/30 transition-all">
               + Create New
             </Button>
           </Link>
@@ -76,7 +76,7 @@ function SideBar() {
                 }`}
               >
                 <menu.icon className={`h-5 w-5 ${
-                  path === menu.path ? "text-blue-400" : "text-gray-400"
+                  path === menu.path ? "text-emerald-400" : "text-gray-400"
                 }`} />
                 <span className={`${
                   path === menu.path ? "text-white font-medium" : "text-gray-300"
@@ -99,7 +99,7 @@ function SideBar() {
         <div className="flex justify-between items-center mb-2">
           <h3 className="text-sm font-medium text-gray-300">Available Credits</h3>
           <span className={`text-sm font-medium ${
-            creditsRemaining < 20 ? "text-red-400" : "text-blue-400"
+            creditsRemaining < 20 ? "text-red-400" : "text-emerald-400"
           }`}>
             {creditsRemaining}/100
           </span>
@@ -108,7 +108,7 @@ function SideBar() {
           value={totalCourse} 
           className="h-2 bg-gray-700" 
           indicatorClassName={`${
-            creditsRemaining < 20 ? "bg-red-500" : "bg-gradient-to-r from-blue-500 to-blue-600"
+            creditsRemaining < 20 ? "bg-red-500" : "bg-gradient-to-r from-emerald-500 to-emerald-600"
           }`}
         />
         <p className="text-xs text-gray-400 mt-2">

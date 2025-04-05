@@ -41,7 +41,7 @@ function CourseList() {
   if (!isLoaded || !user) {
     return (
       <div className="w-full h-[40vh] flex items-center justify-center">
-        <div className="animate-spin h-12 w-12 border-4 border-blue-600 rounded-full border-t-transparent"></div>
+        <div className="animate-spin h-12 w-12 border-4 border-emerald-600 rounded-full border-t-transparent"></div>
       </div>
     );
   }
@@ -52,7 +52,7 @@ function CourseList() {
         <motion.h2 
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
-          className="font-bold text-2xl bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"
+          className="font-bold text-2xl bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent"
         >
           Your Study Material
         </motion.h2>
@@ -62,7 +62,7 @@ function CourseList() {
         >
           <Button
             onClick={GetCourseList}
-            className="bg-gray-800 hover:bg-gray-700 border border-gray-600 text-blue-400 hover:text-blue-300 transition-all"
+            className="bg-gray-800 hover:bg-gray-700 border border-gray-600 text-emerald-400 hover:text-emerald-300 transition-all"
             disabled={loading}
           >
             <RefreshCw className={`mr-2 h-4 w-4 ${loading ? "animate-spin" : ""}`} />

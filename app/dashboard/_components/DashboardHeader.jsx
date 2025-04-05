@@ -23,7 +23,7 @@ function DashboardHeader() {
         <div className="flex items-center space-x-2">
           <Image src={"/logo.png"} alt="logo" width={40} height={40} className="filter brightness-125" />
           <Link href={"/dashboard"}>
-            <span className="text-xl md:text-2xl font-bold text-blue-400">Interview-Wrapper</span>
+            <span className="text-xl md:text-2xl font-bold text-emerald-400">Interview-Wrapper</span>
           </Link>
         </div>
       )}
@@ -32,7 +32,7 @@ function DashboardHeader() {
       <UserButton 
         appearance={{
           elements: {
-            userButtonAvatarBox: "h-10 w-10 border-2 border-blue-500/50",
+            userButtonAvatarBox: "h-10 w-10 border-2 border-emerald-500/50",
             userButtonPopoverCard: "bg-gray-800 border border-gray-700",
             userButtonPopoverActionButtonText: "text-gray-200 hover:text-white",
             userButtonPopoverActionButton: "hover:bg-gray-700"
